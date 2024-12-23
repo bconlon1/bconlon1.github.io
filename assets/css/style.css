@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif');
+
+#default-font {
+	font-family: "Nunito", serif;
+	font-size: 1.25em;
+	font-weight: 500;
+	font-style: normal;
+}
+#nav-font {
+	font-family: "PT Serif", serif;
+	font-size: 1.5em;
+	font-weight: 600;
+	font-style: semibold;
+}
+
+/*todo: condition for checking viewport size for background*/
+body {
+	margin: 0px;
+	background-image: url("images/background.png");
+	background-color: gray;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: auto 100vh;
+}
+
+body * {
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+header {
+	margin-bottom: 5px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.image {
+	width: 100%;
+	padding-top: 20px;
+}
+	
+img.logo {
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+.links {
+	background-color: rgba(81, 109, 153, 0.35);
+    display: inline-block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.nav {
+	background-color: #516d99;
+	filter: drop-shadow(DarkSlateGray 3px 3px 2px);
+	width: 20%;
+	padding: 10px;
+    display: inline-block;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+.social {
+	background-color: #516d99;
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: drop-shadow(DarkSlateGray 3px 3px 2px);
+	width: 25px;
+	height: 25px;
+	padding: 10px;
+	margin-top: 10px;
+    display: inline-block;
+	text-align: center;
+}
+
+a.nav:hover, a.social:hover {
+	background-color: #384c6b;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+#bluesky {
+	background-image: url("images/socials/bluesky.png");
+}
+
+main {
+	background-color: aliceblue;
+	display: grid;
+	gap: 20px;
+    padding: 15px;
+}
+
+.section {
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+#info {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#blog {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#projects {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+#community {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}

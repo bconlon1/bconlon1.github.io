@@ -2,11 +2,17 @@
 <html lang="en">
 	{%- include metadata/head.html -%}
 	<body>
-		<div class="backing"></div>
-		{%- include header.html -%}
+	
+		{%- if page.logo -%}
+			{% capture logo_info %}
+			{{ page.logo }}
+			{% endcapture %}
+		{%- endif -%}
+		
+		{%- include header.html logo=logo_info -%}
 		<main>
 			{{ content }}
 		</main>
-
+		{%- include footer.html -%}
 	</body>
 </html>

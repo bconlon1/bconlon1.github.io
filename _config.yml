@@ -19,16 +19,28 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Your awesome title
-email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 permalink: /:title/
+socials:
+    github: https://github.com/The-Aether-Team
+    modrinth: https://modrinth.com/user/The-Aether-Team
+    curseforge: https://www.curseforge.com/members/theaetherteam
+    wikigg: https://aether.wiki.gg/
+    bluesky: https://bsky.app/profile/aether-mod.net
+    twitter: https://twitter.com/DevAether
+    mastodon: https://mastodon.gamedev.place/@DevAether
+    facebook: https://www.facebook.com/AetherMod
+    threads: https://www.threads.net/@devaether
+    instagram: https://www.instagram.com/devaether
+    reddit: https://www.reddit.com/r/TheAether/
+    youtube: https://www.youtube.com/GildedGames
+    twitch: https://twitch.tv/theaetherteam
+    tiktok: https://www.tiktok.com/@devaether
 markdown: kramdown
 paginate: 5
 paginate_path: "/:num/"
